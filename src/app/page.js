@@ -1,6 +1,8 @@
 "use client"
 import React from "react";
 import { MdSaveAlt } from "react-icons/md";
+import { IoMdShare } from "react-icons/io";
+import { FlickeringGrid } from "@/components/ui/flickering-grid"
 
 export default function Home() {
   const handleDownload = () => {
@@ -21,14 +23,31 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <button
-        onClick={handleDownload}
-        className="flex items-center gap-2 bg-blue-800 hover:bg-blue-900 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
-      >
-        <MdSaveAlt className="text-lg" />
-        Save Contact
-      </button>
+    <div className="h-screen flex items-center justify-center bg-gray-950">
+      <div className="min-w-[320px] max-w-[5 00px] relative h-full">
+        <FlickeringGrid className="absolute inset-0 w-full" />
+        <div className="relative z-5 h-full flex flex-col text-white">
+          <h1 className="text-2xl font-semibold text-lime-200 text-center">Sargam Pandey</h1>
+          <p className="text-center text-gray-300">CEO, Shoolin Innovations Limited</p>
+          <section>
+          </section>
+          <div className="flex w-full absolute bottom-0 rounded-tr-2xl  rounded-tl-2xl overflow-hidden">
+            <button
+              onClick={handleDownload}
+              className="w-full flex items-center justify-center gap-2 bg-lime-800 hover:bg-lime-700 text-white font-medium p-2 transition-all duration-200"
+            >
+              <MdSaveAlt className="text-lg" />
+              Save Contact
+            </button>
+            <button
+              className="w-full flex items-center justify-center gap-2 bg-lime-950 hover:bg-lime-900 text-white font-medium p-2 transition-all duration-200"
+            >
+              <IoMdShare className="text-lg" />
+              Save Contact
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
