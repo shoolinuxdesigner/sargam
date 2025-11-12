@@ -43,7 +43,7 @@ export default function Home() {
               className="w-full flex items-center justify-center gap-2 bg-lime-950 hover:bg-lime-900 text-white font-medium p-2 transition-all duration-200"
             >
               <IoMdShare className="text-lg" />
-              Save Contact
+              Share Contact
             </button>
           </div>
         </div>
