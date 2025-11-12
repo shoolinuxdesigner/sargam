@@ -23,9 +23,9 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-950">
-      <div className="min-w-[320px] max-w-[5 00px] relative h-full">
-        <FlickeringGrid className="absolute inset-0 w-full" />
+    <div className="h-screen flex items-center justify-center bg-gray-950 relative">
+      <FlickeringGrid className="absolute inset-0 w-full" />
+      <div className="min-w-[320px] max-w-[500px]  h-full">
         <div className="relative z-5 h-full flex flex-col text-white">
           <h1 className="text-2xl font-semibold text-lime-200 text-center">Sargam Pandey</h1>
           <p className="text-center text-gray-300">CEO, Shoolin Innovations Limited</p>
