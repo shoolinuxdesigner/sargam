@@ -3,6 +3,7 @@ import React from "react";
 import { MdSaveAlt } from "react-icons/md";
 import { IoMdShare } from "react-icons/io";
 import { FlickeringGrid } from "@/components/ui/flickering-grid"
+import { Profile } from "@/components/Design/Details";
 
 export default function Home() {
   const handleDownload = () => {
@@ -23,28 +24,33 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-950 relative">
+    <div className="h-screen flex items-center justify-center bg-black relative">
       <FlickeringGrid className="absolute inset-0 w-full" />
       <div className="min-w-[320px] max-w-[500px]  h-full">
-        <div className="relative z-5 h-full flex flex-col text-white">
+        <div className="relative z-5 h-full flex flex-col text-white pt-5">
           <h1 className="text-2xl font-semibold text-lime-200 text-center">Sargam Pandey</h1>
           <p className="text-center text-gray-300">CEO, Shoolin Innovations Limited</p>
           <section>
+            <div>
+              <Profile/>
+            </div>
           </section>
-          <div className="flex w-full absolute bottom-0 rounded-tr-2xl  rounded-tl-2xl overflow-hidden">
-            <button
-              onClick={handleDownload}
-              className="w-full flex items-center justify-center gap-2 bg-lime-800 hover:bg-lime-700 text-white font-medium p-2 transition-all duration-200"
-            >
-              <MdSaveAlt className="text-lg" />
-              Save Contact
-            </button>
-            <button
-              className="w-full flex items-center justify-center gap-2 bg-lime-950 hover:bg-lime-900 text-white font-medium p-2 transition-all duration-200"
-            >
-              <IoMdShare className="text-lg" />
-              Share Contact
-            </button>
+          <div className="flex w-full justify-center items-center fixed bottom-3 left-0 px-3">
+            <div className="flex max-fit justify-center items-center overflow-hidden rounded-full">
+              <button
+                onClick={handleDownload}
+                className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-lime-800 hover:bg-lime-700 text-white font-medium py-2 px-3 transition-all duration-200"
+              >
+                <MdSaveAlt className="text-lg" />
+                Save Contact
+              </button>
+              <button
+                className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-lime-900 border-l-2 border-lime-950 hover:bg-lime-900 text-white font-medium py-2 px-3 transition-all duration-200"
+              >
+                <IoMdShare className="text-lg" />
+                Share Contact
+              </button>
+            </div>
           </div>
         </div>
       </div>
