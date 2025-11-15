@@ -11,7 +11,7 @@ export const FlickeringGrid = ({
   width,
   height,
   className,
-  maxOpacity = 0.3,
+  maxOpacity = 0.2,
   ...props
 }) => {
   const canvasRef = useRef(null)
