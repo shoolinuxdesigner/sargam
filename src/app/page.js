@@ -4,6 +4,8 @@ import { MdSaveAlt } from "react-icons/md";
 import { IoMdShare } from "react-icons/io";
 import { FlickeringGrid } from "@/components/ui/flickering-grid"
 import { Profile } from "@/components/Design/Details";
+import { About } from "@/components/Design/About";
+import { Social } from "@/components/Design/Social";
 
 export default function Home() {
   const handleDownload = () => {
@@ -26,13 +28,15 @@ export default function Home() {
   return (
     <div className="h-screen flex items-center justify-center bg-black relative">
       <FlickeringGrid className="absolute inset-0 w-full" />
-      <div className="min-w-[320px] max-w-[500px]  h-full">
+      <div className="min-w-[320px] max-w-[400px]  h-full">
         <div className="relative z-5 h-full flex flex-col text-white pt-5">
-          <h1 className="text-2xl font-semibold text-lime-200 text-center">Sargam Pandey</h1>
-          <p className="text-center text-gray-300">CEO, Shoolin Innovations Limited</p>
-          <section>
-            <div>
-              <Profile/>
+          <h1 className="text-3xl font-semibold text-lime-500 text-center">Sargam Pandey</h1>
+          <p className="text-center text-gray-300">CEO & MD, Shoolin Innovations Limited</p>
+          <Social />
+          <section className="mt-5">
+            <div className="flex flex-col gap-2">
+              <About />
+              <Profile />
             </div>
           </section>
           <div className="flex w-full justify-center items-center fixed bottom-3 left-0 px-3">
