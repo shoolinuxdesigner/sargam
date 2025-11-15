@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MaintenancePage from "@/components/ui/Maintenance";
 
 const trebuchet = Inter({
   variable: "--font-trebuchet",
@@ -12,13 +13,12 @@ export const metadata = {
   description: "CEO - Shoolin Innovations Limited",
 };
 
-const isMaintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${trebuchet.variable} antialiased`}   suppressHydrationWarning>
-        {children}
+        {/* {children} */}
+        <MaintenancePage/>
       </body>
     </html>
   );
