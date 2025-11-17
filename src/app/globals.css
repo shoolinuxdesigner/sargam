@@ -123,3 +123,7 @@
 .imageBar {
   background: linear-gradient(90deg, rgba(124, 206, 0, 0) 0%, rgba(124, 206, 0, 1) 50%, rgba(124, 206, 0, 0) 100%);
 }
+
+::selection {
+  background: transparent;
+}
