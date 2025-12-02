@@ -4,7 +4,7 @@ import { FlickeringGrid } from "@/components/ui/flickering-grid"
 
 export default function MaintenancePage() {
     return (
-        <div className="h-full h-screen flex items-center justify-center bg-black relative">
+        <div className="h-screen flex items-center justify-center bg-black relative">
             <FlickeringGrid className="fixed inset-0 w-full opacity-30" />
 
             <div className="text-center">
