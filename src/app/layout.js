@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import MaintenancePage from "@/components/ui/Maintenance";
 import ClientProtection from "@/components/ClientProtection";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const trebuchet = Inter({
   variable: "--font-trebuchet",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${trebuchet.variable} antialiased`} suppressHydrationWarning>
         <ClientProtection>
           {/* {children} */}
+          <SpeedInsights />
           <MaintenancePage/>
         </ClientProtection>
       </body>
