@@ -10,7 +10,7 @@ export function Share() {
         <div className="flex flex-col justify-center items-center">
             <QRCode
                 className="size-50 mb-3"
-                data="https://mrchamp.netlify.app"
+                data="https://ceo-shoolin.vercel.app"
             />
             <ShareCard/>
         </div>
