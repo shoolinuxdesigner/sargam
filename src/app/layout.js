@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${trebuchet.variable} antialiased`} suppressHydrationWarning>
         <ClientProtection>
-          {/* {children} */}
+          {children}
           <SpeedInsights />
-          <MaintenancePage/>
+          {/* <MaintenancePage/> */}
         </ClientProtection>
       </body>
     </html>
