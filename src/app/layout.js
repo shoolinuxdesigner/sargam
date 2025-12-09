@@ -1,14 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import MaintenancePage from "@/components/ui/Maintenance";
 import ClientProtection from "@/components/ClientProtection";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
-const trebuchet = Inter({
-  variable: "--font-trebuchet",
-  subsets: ["latin"],
-  display: 'swap',
-});
 
 export const metadata = {
   title: "Sargam Pandey",
@@ -18,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${trebuchet.variable} antialiased`} suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
         <ClientProtection>
           {children}
           <SpeedInsights />

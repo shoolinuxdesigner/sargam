@@ -86,11 +86,11 @@ const ShareCard = ({ title = "Check this out!", className = "" }) => {
     return (
         <div className='w-[90%]'>
             {/* URL Display */}
-            <div className={`flex w-full p-3 bg-neutral-900 rounded-md border border-gray-700 font-mono text-white text-sm overflow-x-auto`}>
+            <div className={`flex w-full p-3 bg-white rounded-md border border-gray-700 font-mono text-black text-sm font-semibold overflow-x-auto`}>
                 <p className='whitespace-nowrap overflow-hidden w-full'>{fullUrl}</p>
                 <button
                     onClick={copyToClipboard}
-                    className="pl-3 text-white dark:text-white font-bold rounded-lg transition-colors duration-200 flex items-center justify-center"
+                    className="pl-3 text-black font-bold rounded-lg transition-colors duration-200 flex items-center justify-center"
                 >
                     {isCopied ? (
                         <FiCheck className="h-5 w-5" />

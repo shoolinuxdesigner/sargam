@@ -7,12 +7,12 @@ import ShareCard from "@/components/ui/shareCard";
 
 export function Share() {
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center ">
             <QRCode
-                className="size-50 mb-3"
-                data="https://ceo-shoolin.vercel.app"
+                className="size-70 mb-3 border-4 border-black p-1.5"
+                data="https://ceo.shoolin.co.uk"
             />
-            <ShareCard/>
+            <ShareCard />
         </div>
     )
 }

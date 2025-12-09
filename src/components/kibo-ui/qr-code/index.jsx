@@ -35,9 +35,9 @@ export const QRCode = ({
       try {
         const styles = getComputedStyle(document.documentElement);
         const foregroundColor =
-          foreground ?? styles.getPropertyValue("--background");
+          foreground ?? styles.getPropertyValue("--foreground");
         const backgroundColor =
-          background ?? styles.getPropertyValue("--foreground");
+          background ?? styles.getPropertyValue("--backgrounds");
 
         const foregroundOklch = getOklch(foregroundColor, [0.21, 0.006, 285.885]);
         const backgroundOklch = getOklch(backgroundColor, [0.985, 0, 0]);

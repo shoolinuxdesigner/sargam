@@ -20,7 +20,9 @@ import { Profile } from "@/components/Design/Details";
 import { About } from "@/components/Design/About";
 import { Social } from "@/components/Design/Social";
 
-import sargam from "@/assets/images/imageDark.png"
+// import sargam from "@/assets/images/imageDark.png"
+import sargam from "@/assets/images/image_2.png"
+import overlay_logo from "@/assets/images/logo_over.png"
 import { Share } from "@/components/Design/Share";
 
 export default function Home() {
@@ -41,23 +43,31 @@ export default function Home() {
   };
 
   return (
-    <div className="h-full lg:h-screen flex items-center justify-center bg-black relative">
+    <div className="h-full lg:h-screen flex items-center justify-center bg-[#e6e9de]  relative">
       <FlickeringGrid className="fixed inset-0 w-full" />
-      <div className="min-w-[320px] max-w-[400px] h-full px-4">
-        <div className="relative z-5 h-full flex flex-col text-white py-5">
-          <div className="flex flex-col w-full justify-center items-center">
+      <div className="min-w-[320px] max-w-[400px] h-full px-4 relative">
+        <Image src={overlay_logo} alt="Overlay Logo" className="absolute top-0 left-0 z-10" />
+        <div className="absolute inset-0 w-full h-full flex opacity-80">
+          <div className="h-full w-1/3 bg-[#494528]"></div>
+          <div className="h-full w-1/3 bg-[#DED9C5]"></div>
+          <div className="h-full w-1/3 bg-[#C5BD98]"></div>
+        </div>
+        <div className="relative z-25 h-full flex flex-col text-white py-5">
+          <div className="flex flex-col w-full justify-center items-center pt-10">
             <Image src={sargam} alt="Sargam Pandey Image" className="w-[280px]" />
-            <div className="imageBar h-[1px] w-full"></div>
-            <div className="h-6 w-full">
+            <div className="imageBar h-[1px] w-full hidden"></div>
+            <div className="h-6 w-full hidden">
               <div className="relative w-full h-20 overflow-hidden">
                 <div className="absolute inset-0 z-1 -translate-y-16 scale-80 h-22 w-full rounded-full bg-lime-600 opacity-10 blur-3xl"></div>
                 <div className="absolute left-5 z-1 -translate-y-16 scale-80 h-22 w-80 rounded-full bg-lime-600/40 blur-2xl"></div>
               </div>
             </div>
           </div>
-          <h1 className="text-3xl font-semibold text-lime-500 text-center">Sargam Pandey</h1>
-          <p className="text-center text-gray-300">CEO & MD, Shoolin Innovations Limited</p>
-          <Social />
+          <div className="flex flex-col w-full justify-center items-center  px-5 pt-3 pb-6 rounded-lg bg-white border border-gray-800 relative z-20 mb-3">
+            <h1 className="text-3xl font-semibold text-[#1D1B09] text-center">Sargam Pandey</h1>
+            <p className="text-center text-[#1D1B09]">CEO & MD, Shoolin Innovations Limited</p>
+            <Social />
+          </div>
           <section className="mt-5 pb-18">
             <div className="flex flex-col gap-2">
               <About />
@@ -68,25 +78,25 @@ export default function Home() {
             <div className="flex max-fit justify-center items-center overflow-hidden rounded-full">
               <button
                 onClick={handleDownload}
-                className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-lime-800 hover:bg-lime-700 text-white font-medium py-2 px-3 transition-all duration-200"
+                className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-[#332f11] hover:bg-[#1d1a07] text-white font-medium py-2 px-3 transition-all duration-200"
               >
                 <MdSaveAlt className="text-lg" />
                 Save Contact
               </button>
               <Drawer>
-                <DrawerTrigger className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-lime-900 border-l-2 border-lime-950 hover:bg-lime-900 text-white font-medium py-2 px-3 transition-all duration-200">
+                <DrawerTrigger className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-[#443f18] border-l-2 border-white hover:bg-[#332f11] text-white font-medium py-2 px-3 transition-all duration-200">
                   <IoMdShare className="text-lg" />
                   Share Contact
                 </DrawerTrigger>
-                <DrawerContent className="bg-zinc-950/95 min-w-[320px] max-w-[400px] mx-auto">
+                <DrawerContent className="bg-orange-50 min-w-[320px] max-w-[400px] mx-auto">
                   <DrawerHeader>
                     <DrawerTitle>
-                      <div className="text-3xl font-semibold text-lime-500 text-center">Sargam Pandey</div>
+                      <div className="text-3xl font-semibold text-[#494528] text-center">Sargam Pandey</div>
                     </DrawerTitle>
-                    <DrawerDescription className="text-white">CEO & MD, Shoolin Innovations Limited</DrawerDescription>
+                    <DrawerDescription className="text-[#494528] text-md">CEO & MD, Shoolin Innovations Limited</DrawerDescription>
                   </DrawerHeader>
                   <div className="px-4">
-                    <Share/>
+                    <Share />
                   </div>
                   <DrawerFooter>
                     <DrawerClose className="w-full flex items-center justify-center whitespace-nowrap gap-2 bg-gray-800 hover:bg-gray-700 text-white font-medium py-2 px-3 rounded-full transition-all duration-200">
