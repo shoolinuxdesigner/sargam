@@ -22,6 +22,7 @@ import { Social } from "@/components/Design/Social";
 
 // import sargam from "@/assets/images/imageDark.png"
 import sargam from "@/assets/images/image_2.png"
+import vector from "@/assets/images/vector.png"
 import overlay_logo from "@/assets/images/logo_over.png"
 import { Share } from "@/components/Design/Share";
 
@@ -54,7 +55,7 @@ export default function Home() {
         </div>
         <div className="relative z-25 h-full flex flex-col text-white py-5">
           <div className="flex flex-col w-full justify-center items-center pt-10">
-            <Image src={sargam} alt="Sargam Pandey Image" className="w-[280px]" />
+            <Image src={vector} alt="Sargam Pandey Image" className="w-[280px]" />
             <div className="imageBar h-[1px] w-full hidden"></div>
             <div className="h-6 w-full hidden">
               <div className="relative w-full h-20 overflow-hidden">
@@ -63,12 +64,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full justify-center items-center  px-5 pt-3 pb-6 rounded-lg bg-white border border-gray-800 relative z-20 mb-3">
+          <div className="flex flex-col w-full justify-center items-center  px-5 pt-3 pb-6 first_bg relative -top-3 z-20 mb-3">
             <h1 className="text-3xl font-semibold text-[#1D1B09] text-center">Sargam Pandey</h1>
             <p className="text-center text-[#1D1B09]">CEO & MD, Shoolin Innovations Limited</p>
             <Social />
           </div>
-          <section className="mt-5 pb-18">
+          <section className="pb-18">
             <div className="flex flex-col gap-2">
               <About />
               <Profile />

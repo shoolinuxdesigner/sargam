@@ -129,3 +129,24 @@
 ::selection {
   background: transparent;
 }
+
+.first_bg{
+  background-image: url(../assets/images/brush_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second_bg {
+  background-image: url(../assets/images/brush_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.third_bg {
+  background-image: url(../assets/images/brush_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
