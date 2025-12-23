@@ -130,7 +130,7 @@
   background: transparent;
 }
 
-.first_bg{
+.first_bg {
   background-image: url(../assets/images/brush_1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
 .second_bg {
   background-image: url(../assets/images/brush_2.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
