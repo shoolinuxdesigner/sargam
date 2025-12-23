@@ -15,10 +15,10 @@ export function Social() {
                 <a href="https://instagram.com/sargampandey_" target="_blank"><FaInstagram size={24} className="text-white" /></a>
             </li>
             <li className="w-fit bg-green-500 hover:bg-green-600 rounded-full p-1.5 transition-all duration-300 hover:scale-105 border border-gray-800">
-                <a href="https://wa.me/9100000000" target="_blank"><FaWhatsapp size={24} className="text-white" /></a>
+                <a href="https://wa.me/919938053955" target="_blank"><FaWhatsapp size={24} className="text-white" /></a>
             </li>
             <li className="w-fit bg-blue-600 hover:bg-blue-700 rounded-full p-1.5 transition-all duration-300 hover:scale-105 border border-gray-800">
-                <a href="tel:+918569856987" target="_blank"><IoMdCall size={24} className="text-white" /></a>
+                <a href="tel:+919938053955" target="_blank"><IoMdCall size={24} className="text-white" /></a>
             </li>
         </ul>
     )

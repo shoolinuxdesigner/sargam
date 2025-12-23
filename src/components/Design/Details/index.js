@@ -4,12 +4,12 @@ import { BorderBeam } from "@/components/ui/border-beam"
 import { Card } from "@/components/ui/card"
 
 // Icons
-import { IoMailOutline } from "react-icons/io5";
+import { IoMailOutline, IoGlobeOutline } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
-import { AiOutlineFacebook } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Profile() {
     return (
@@ -65,25 +65,25 @@ export function Profile() {
                         <a href="mailto:ceo@shoolin.co.uk" target="_blank" className="w-full">ceo@shoolin.co.uk</a>
                     </div>
                     <div className="flex items-center gap-3 text-[#1D1B09]">
-                        <IoMdCall size={20} className="pt-0.5 opacity-70" />
-                        <a href="tel:+918569856987" target="_blank" className="w-full">+91 85698 56987</a>
+                        <IoGlobeOutline size={20} className="pt-0.5 opacity-70" />
+                        <a href="https://shoolin.co.uk" target="_blank" className="w-full">shoolin.co.uk</a>
                     </div>
                     <div className="flex items-center gap-3 text-[#1D1B09]">
                         <FaWhatsapp size={20} className="pt-0.5 opacity-70" />
-                        <a href="wa.me/918569856987" target="_blank" className="w-full">+91 85698 56987</a>
+                        <a href="wa.me/919938053955" target="_blank" className="w-full">+91 99380 53955</a>
                     </div>
                     <hr className="border-gray-800/50 my-2" />
                     <div className="flex items-center gap-3 text-[#1D1B09]">
                         <FaInstagram size={20} className="pt-0.5 opacity-70" />
-                        <a href="https://instagram.com/sargampandey_" target="_blank" className="w-full">sargampandey_</a>
+                        <a href="https://www.instagram.com/sargampandey_" target="_blank" className="w-full">sargampandey_</a>
                     </div>
                     <div className="flex items-center gap-3 text-[#1D1B09]">
                         <AiOutlineLinkedin size={20} className="pt-0.5 opacity-70" />
                         <a href="https://www.linkedin.com/in/sargam-pandey-74bb9a6b/" target="_blank" className="w-full">sargam-pandey-74bb9a6b</a>
                     </div>
                     <div className="flex items-center gap-3 text-[#1D1B09]">
-                        <AiOutlineFacebook size={20} className="pt-0.5 opacity-70" />
-                        <a href="https://www.facebook.com/sargam.pandey/" target="_blank" className="w-full">sargam-pandey</a>
+                        <FaXTwitter size={20} className="pt-0.5 opacity-70" />
+                        <a href="https://x.com/SargamPandey17" target="_blank" className="w-full">SargamPandey17</a>
                     </div>
                 </div>
             </div>
