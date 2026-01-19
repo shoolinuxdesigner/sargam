@@ -1,12 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
 FN;CHARSET=UTF-8:Sargam Pandey
-N;CHARSET=UTF-8:Pandey;Sargam;;;
+N;CHARSET=UTF-8:Pandey;Sargam;;Miss;
 EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:ceo@shoolin.co.uk
-TEL;TYPE=CELL:+91 99380533955
-TEL;TYPE=WORK,VOICE:+44 7417475750
-TITLE;CHARSET=UTF-8:CEO
+TEL;TYPE=WORK,VOICE:+91 99380 53955
+ADR;CHARSET=UTF-8;TYPE=WORK:;;8 Water Street\, ;Liverpool\, ;United Kingdom;L2 8TD;United Kingdom
+ROLE;CHARSET=UTF-8:CEO
 ORG;CHARSET=UTF-8:Shoolin Innovations Ltd
+URL;type=WORK;CHARSET=UTF-8:https://shoolin.co.uk/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/sargam-pandey-74bb9a6b/
 X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/sargampandey_/
-REV:2025-11-07T10:30:47.522Z
+REV:2026-01-17T10:49:43.706Z
 END:VCARD
