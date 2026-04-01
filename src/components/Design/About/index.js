@@ -36,7 +36,7 @@ export function About() {
             <div className="relative w-full px-8 py-6 rounded-lg overflow-hidden gap-2 second_bg">
                 <h1 className="text-center font-semibold uppercase mb-2 text-[#1D1B09] hidden">About Me</h1>
                 <div className="flex flex-col gap-1.5">
-                    <p className="text-white text-center text-[15px]">I lead Shoolin Innovations Ltd., where ideas evolve into brands with character, clarity, and purpose. My world blends marketing, fashion, F&B, and maritime education into stories that move people. I build identities and campaigns that don&apos;t just look good - they create momentum and real-world impact. If bold vision and meaningful collaboration excite you, you&apos;re in the right place.</p>
+                    <p className="text-white text-center text-[15px]">I lead Shoolin Innovations Limited., where ideas evolve into brands with character, clarity, and purpose. My world blends marketing, fashion, F&B, and maritime education into stories that move people. I build identities and campaigns that don&apos;t just look good - they create momentum and real-world impact. If bold vision and meaningful collaboration excite you, you&apos;re in the right place.</p>
                 </div>
             </div>
         </>
